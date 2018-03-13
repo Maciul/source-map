@@ -659,7 +659,7 @@ Creates a SourceNode from generated code and a SourceMapConsumer.
 
 ```js
 const consumer = await new SourceMapConsumer(fs.readFileSync("path/to/my-file.js.map", "utf8"));
-onst node = SourceNode.fromStringWithSourceMap(fs.readFileSync("path/to/my-file.js"),
+const node = SourceNode.fromStringWithSourceMap(fs.readFileSync("path/to/my-file.js"),
                                                consumer);
 ```
 
